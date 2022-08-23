@@ -1,0 +1,10 @@
+<u><h3>TASK LIST:</h3></u>
+<ul>
+  <div *ngIf="isValid(); else other"></div>
+  <li *ngFor="let todo of todos; index as i" style="color:green">
+    {{ todo.task }}
+    <button style="background-color:red" (click)="deletetodo(i)">&#215;</button>
+    <!-- <button style="background-color:green" (click)="edit()">&#9998;</button>-->
+  </li>
+  <ng-template #other>TODO-LIST IS EMPTY</ng-template>
+</ul>

@@ -1,0 +1,8 @@
+<body style="margin:auto">
+  <h1 style="color:red">add task</h1>
+<label for="inp">ENTER A TASK:     </label>
+<input type="text" id="inp" style="color:blue" [(ngModel)]="inputstrng" />
+<br><br>
+<button (click)="addtodo(inputstrng)" style="background-color:green">addtask</button>
+<button (click)="clrfld()" style="background-color:blue">clearfield</button>
+</body>
